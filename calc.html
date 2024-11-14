@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .display{
+            display: flex;
+        }
+        input{
+            width: 100%;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+        .display{
+            width: 26%;
+            height: 120px;
+            border: 2px solid black;
+        }
+        .content{
+            width: 24%;
+            background-color: whitesmoke;
+            border: 2px solid black;
+            padding-left: 25px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 5px;
+        }
+        button{
+            font-size:20px; 
+            height: 83px;
+            width: 82px;
+            border: 2px solid black;
+        }
+        div button:hover{
+            transform:scale(0.9,0.9);
+        }
+        #a{
+            background-color: orange;
+            color: azure;
+        }
+        #b{
+            background-color:cadetblue;
+            color: azure;
+        }
+        #inp{
+            background-color:darkgrey;
+            color : black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="display">  
+            <input type="text" id="inp">
+        </div>
+
+        <div class="content">
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value =''"id='b'>AC</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('%')">%</button>
+            <button onclick="">dlt</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('/')">/</button><br>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +7">7</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +8">8</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +9">9</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('*')">x</button><br>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +4">4</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +5">5</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +6">6</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('-')">-</button><br>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +1">1</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +2">2</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +3">3</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('+')">+</button><br>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('00')">00</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +0">0</button>
+            <button onclick="document.getElementById('inp').value = document.getElementById('inp').value +('.')">.</button>
+
+            <button onclick="document.getElementById('inp').value = eval (document.getElementById('inp').value)"id='a'>=</button>
+        </div>
+    </div>
+   <script>
+
+   </script> 
+</body>
+</html>
